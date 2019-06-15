@@ -1,0 +1,19 @@
+{
+	"HTML-Test": {
+        "prefix": "html-test",
+        "body": [
+            "<!DOCTYPE html>",
+                "<html lang=\"$1\">",
+				"<head>",
+				"\t<meta charset=\"UTF-8\">",
+				"\t<title>$2</title>",
+				"</head>",
+
+				"<body>",
+
+				"</body>",
+                "</html>"       
+        ],
+        "description": "Es un test html"
+    }
+}
