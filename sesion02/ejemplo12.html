@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio 12</title>
+</head>
+<body>
+    <!-- pattern -->
+    <form action="" method="POST">
+        <label for="">Nombres</label>
+        <input type="text" pattern="[A-Za-z\s]{1,30}" title="Ej. Mathieu Joao" required> <br>
+
+        <label for="">Apellidos</label>
+        <input type="text" pattern="[A-Za-z\s]{1,30}" title="Ej. Gonzales Diaz" required> <br>
+
+        <label for="dni">Dni:</label>
+        <input type="text" pattern="[0-9]{8}" required> <br>
+
+        <label for="edad">Edad:</label>
+        <input type="text" pattern="[0-9]{1,3}"> <br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
