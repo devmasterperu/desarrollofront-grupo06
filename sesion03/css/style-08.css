@@ -1,0 +1,37 @@
+p {
+    font-style: italic; /* normal */
+    /* font-size: 24px;  tamaño de fuente*/
+
+    /*font-size: xx-small;  9px */
+    /* font-size: x-small; 10px */
+    /* font-size: small;  13px */
+    /* font-size: medium; 16px - Defecto */
+    font-size: large; /* 18px */
+    /* font-size: x-large; 24px */
+     /*font-size: xx-large; 32px */
+
+     text-align: center; /* left-right-justify-center */
+
+     word-spacing: 7px; /* espacio entre palabras */
+
+     line-height: 21px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+    letter-spacing: 7px; /* espacio entre letras */
+} 
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100; /* peso de fuente */
+    font-style: italic; /* estilo de fuente */
+    
+    text-transform: capitalize; /* capitalize-uppercase-lowercase */
+}
+
+a {
+    text-decoration: none; /* overline-underline-line-through */
+}
