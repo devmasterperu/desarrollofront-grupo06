@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+    <style>
+        /* selector descendente */
+        article p span {
+            color: peru;
+        }
+
+        /* selector de clase */
+        .parrafo-2 {
+            color: green;
+        }
+        .caja {
+            background-color: violet;
+        }
+
+        /* elemento p que tenga la clase seleccionado */
+        p.seleccionado {
+            text-decoration: underline;
+        }
+
+        /* elementos con +1 clase */
+        .text-align-center {
+            text-align: center;
+        }
+
+        .color-rojo {
+            color: red;
+        }
+
+        /* elemento seleccionado por id */
+        #seleccionar {
+           text-transform: uppercase; 
+        }
+
+        /* 123 */
+        [id="123"] {
+            text-decoration: underline;
+        }
+
+        /* selector hijo directo */
+        article > h1 {
+            background-color: tomato;
+        }
+
+        /* selector adyacente */
+        section h1 + h2 {
+            background-color: #00012D;
+            color: #FFF;
+        }
+
+        /* selector precedente */
+        section h1 ~ h2 {
+            background-color: green;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta deleniti placeat nisi reprehenderit ipsam quo dignissimos labore nobis aliquam, tempora vel debitis voluptas veniam consequuntur, distinctio nemo consectetur laudantium?
+        Impedit minus iure culpa corporis doloremque eligendi inventore quis, numquam quae! Ex maxime assumenda est dicta illum atque quae, tempore totam porro a accusamus ab expedita. Quibusdam culpa reiciendis perferendis.
+        Recusandae nam, nulla consequuntur quasi dolores est expedita et iure culpa fugit soluta assumenda, maiores, sapiente libero? Est odit facilis officia veritatis molestias, ipsam quam doloribus earum quisquam odio recusandae?
+        Aperiam accusantium eaque veritatis dolorum hic perferendis ex veniam officia alias aut assumenda, quibusdam aspernatur. Odio cum mollitia, dolorum hic ab et aliquid autem atque impedit quos accusamus enim. Fuga.
+        Nemo recusandae voluptates id culpa, odit eum perspiciatis ullam corrupti quaerat quisquam amet quia reiciendis exercitationem unde placeat explicabo, nam officia sunt cum voluptate, fuga pariatur eligendi a impedit? Hic?
+        Adipisci libero, vero amet perspiciatis fuga nisi dolore, voluptatibus veritatis eligendi aperiam ducimus iste! Praesentium eveniet odit animi totam iure cupiditate qui ipsam at porro ipsum tempore, deleniti, et fuga.
+        Quibusdam consequuntur est totam incidunt ducimus quaerat accusantium enim placeat rem, doloribus eum laborum maiores vero sint! Omnis tenetur assumenda alias hic quos accusamus a deleniti magni, 
+        <span id="seleccionar">porro debitis molestiae. </span></p>
+
+    </article>
+    <div class="caja">
+        <p class="parrafo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita sequi dolorem mollitia eligendi iste dolor a. Eligendi earum nisi minus incidunt possimus quis inventore ut, rem animi voluptatum. Consequuntur.
+        Natus, porro eligendi, eum ducimus nobis alias sunt enim ad ut veritatis obcaecati et asperiores optio quia ex tempora molestias facere, unde nam repellat. Asperiores facilis perferendis alias ullam amet?
+        Odit vel cum nam mollitia eius sunt perferendis iste, ea facere voluptas esse quis amet quisquam adipisci earum eum placeat, accusamus non, necessitatibus dolores ad dolorum animi deserunt. Quasi, officiis!
+        Dolor velit, error dolore laboriosam amet earum consequuntur ut autem quasi tempore nulla accusantium dolorem repellat? Voluptas illo inventore quis in quas sit, nobis a culpa aspernatur omnis laborum natus.
+        Id quod iure architecto, maiores, voluptatibus hic quis dolor iusto amet facere enim sint recusandae quam qui, porro quos cum! Quod ullam iure soluta voluptates exercitationem! Excepturi illo accusantium id!
+        Iure amet tempora ad sint excepturi. Facilis, neque quaerat. Quis accusantium, eveniet asperiores beatae corporis consequuntur fugit eos quos, est cumque ducimus quod fugiat aliquam velit illum fuga voluptatibus enim!
+        Voluptatibus vitae eligendi esse repellat, dolor dolorem magni consectetur praesentium, accusantium labore reiciendis delectus nobis debitis ex, rerum consequuntur aliquam. Exercitationem iusto optio corrupti quas, debitis <span>praesentium error itaque corporis!</span></p>
+    </div>
+    <article>
+        <p class="seleccionado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus asperiores laborum nulla aliquid suscipit molestiae amet vitae debitis tempora error blanditiis distinctio, deserunt, quasi provident, at odit facere repellendus!Placeat dolores animi modi in numquam perferendis enim impedit vel explicabo, vero tempore nulla rem, alias necessitatibus excepturi at illo suscipit vitae. Perspiciatis iure quasi nisi, ipsam dolorem blanditiis aut.</p>
+        <p class="text-align-center color-rojo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti placeat vel adipisci fugiat expedita aliquid explicabo, repellendus rem, quae nobis officia sunt, illo similique. Aperiam expedita incidunt sapiente asperiores omnis?Aut sint cumque minus sed velit eveniet accusamus beatae similique aliquid minima eos perspiciatis culpa voluptates rem deserunt, quae vitae, repudiandae pariatur nobis laborum nostrum voluptatum 
+        <span class="seleccionado" id="123">doloribus numquam laboriosam. Optio.</span></p>
+    </article>
+    <article>
+        <h1>Texto dentro de mi h1</h1>
+        <p>Texto dentro de mi p</p>
+        <section>
+            <h1>Texto dentro de mi h1 (section)</h1>
+            <h2>Texto dentro del h2 (section)</h2>
+            <h2>Texto dentro del h2 (section)</h2>
+        </section>
+    </article>
+</body>
+</html>
