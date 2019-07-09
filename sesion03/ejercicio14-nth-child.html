@@ -35,10 +35,17 @@
             background-color: violet;
         }
 
+        /* seleccionamos el elemento vacio */
+        .selector3 :empty {
+            color: green;
+        }
+
+        /* seleccionamos el quinto elemento, contando desde el ultimo */
         .selector4 :nth-last-child(5) {
             color: green;
         }
 
+        /* seleccionamos el tercer elemento, contando desde el ultimo */
         .selector4 :nth-last-child(3) {
             color: red;
         }
@@ -54,13 +61,8 @@
         }
 
         /* seleccionamos a todos los elemento menos al ultimo */
-        .selector5 p:not(:last-child) {
+        .selector5 :not(:last-child) {
             background-color: #E13549;
-        }
-
-        /* seleccionamos el elemento vacio */
-        .selector3 li:empty {
-            color: green;
         }
 
         /* seleccionar la primer linea del primer elemento */
