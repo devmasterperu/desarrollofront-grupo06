@@ -1,0 +1,14 @@
+:root {
+    --amarillo: #FFDD1C;
+    --verde : #00AF50;
+    --negro: #000;
+    --blanco: #FFF;
+}
+
+h3 {
+    color: var(--amarillo);
+} 
+
+a {
+    color: var(--verde);
+} 
