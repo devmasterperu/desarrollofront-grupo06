@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+    <style>
+        section {
+            width: 800px;
+            height: 400px;
+            background-color: coral;
+
+            display: flex;
+            /* cambio de dirección */
+            /* flex-direction: row; row | row-reverse | column | column-reverse */
+            /* distribuir elementos */
+            justify-content: space-between; /* center | flex-start | flex-end | space-around | space-between */
+            /* flex-wrap: wrap;  nowrap | wrap | wrap-reverse*/
+            /* uniendo flex-direction y flex-wrap */
+            flex-flow: row wrap;
+            /* alinea elementos en el eje secundario */
+            align-items: stretch; /* center | flex-start | flex-end | baseline */
+
+        }
+
+        div {
+            width: 100px;
+            /* width: 250px; */
+            /* height: 100px; */
+            background-color: skyblue;
+        }
+
+        section :nth-child(3) {
+            font-size: 75px;
+        }
+
+    </style>
+</head>
+<body>
+</body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+</html>

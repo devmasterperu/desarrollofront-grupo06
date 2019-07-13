@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+    <style>
+        section {
+            width: 800px;
+            height: 400px;
+            background-color: coral;
+
+            display: flex;
+            /* cambio de dirección */
+            flex-direction: row; /* row | row-reverse | column | column-reverse */
+            /* distribuir elementos */
+            justify-content: space-between; /* center | flex-start | flex-end | space-around | space-between */
+            flex-wrap: wrap; /* nowrap | wrap | wrap-reverse*/
+            /* alinea elementos en el eje secundario */
+            align-items: flex-start; /* center | flex-start | flex-end | baseline */
+             /* align-content: space-between ;center | flex-start | flex-end | space-around |  */
+        }
+
+        div {
+            width: 100px;
+            /* width: 250px; */
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        /* con flexbox es posible cambiar el orden de los elementos en mi HTML */
+        section :nth-child(4){
+            order: -0;
+        }
+        section :nth-child(3){
+            order: 1;
+        }
+        section :nth-child(2){
+            order: 2
+        }
+        section :nth-child(1){
+            order: 3
+        }
+    </style>
+</head>
+<body>
+</body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+</html>
