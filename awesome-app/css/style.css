@@ -286,6 +286,66 @@ Style
     color: var(--tertiary-color);
 }
 
+.features-item:nth-child(1)::before {
+    font-family: 'Linearicons';
+    content: "\e756";
+    font-size: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #F4583B;
+}
+
+.features-item:nth-child(2)::before {
+    font-family: 'Linearicons';
+    content: "\e672";
+    font-size: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #F4583B;
+}
+
+.features-item:nth-child(3)::before  {
+    font-family: 'Linearicons';
+    content: "\e626";
+    font-size: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #F4583B;
+}
+
+.features-item:nth-child(4)::before  {
+    font-family: 'Linearicons';
+    content: "\e7ae";
+    font-size: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #F4583B;
+}
+
+.features-item:nth-child(5)::before  {
+    font-family: 'Linearicons';
+    content: "\e6d9";
+    font-size: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #F4583B;
+}
+
+.features-item:nth-child(6)::before  {
+    font-family: 'Linearicons';
+    content: "\e7ed";
+    font-size: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #F4583B;
+}
+
 /* main-intro */
 .intro {
     min-height: 540px;
@@ -326,6 +386,129 @@ Style
 .intro-description p {
     margin-top: 0;
     margin-bottom: 25px;
+}
+
+/* main-screenshots */
+.main-screenshots {
+    background-color: #F5FAFD;
+    padding-top: 94px;
+    padding-bottom: 132px;
+}
+
+.screenshots-top {
+    text-align: center;
+}
+
+.screenshots-top h2 {
+    margin-bottom: 19px;
+}
+
+.screenshots-top p {
+    color: var(--tertiary-color);
+    max-width: 745px;
+    margin: 0 auto;
+}
+
+.screenshots figure {
+    text-align: center;
+    margin-top: 43px;
+} 
+
+/* main-package */
+.package {
+    padding-bottom: 70px;
+    border-bottom: 1px solid #F1F1F1;
+}
+.package-list {
+    margin-top: 45px;
+    display: flex;
+    font-weight: wrap;
+}
+
+.package-item {
+    width: 280px;
+    margin-bottom: 30px;
+}
+
+.package-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.package-top {
+    text-align: center;
+}
+
+.package-top h2 {
+    margin-bottom: 19px;
+}
+
+.package-top p {
+    color: #A0A3A8;
+    max-width: 824px;
+    margin: 0 auto;
+}
+
+.package-card {
+    max-width: 280px;
+    background-color: #F5FAFD;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.10);  /* tema */
+    border-radius: 12px;
+    text-align: center;
+}
+
+.package-card h4 {
+    color: #4B4C50;
+    margin-bottom: 0;
+    height: 52px;
+    line-height: 52px;
+}
+
+.package-card strong {
+    background-color: #FFF;
+    display: block;
+    height: 105px;
+    line-height: 105px;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.package-card sup,
+.package-card span {
+    font-size: 20px;
+}
+
+.package-card ul {
+    margin: 22px 0 57px 0;
+    padding: 0 38px;
+}
+
+.package-card li {
+    color: #A0A3A8;
+    margin: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #DCE2E6;
+}
+
+.package-card li:not(:first-child) {
+    padding-top: 8px;
+}
+
+.package-card p {
+    color: #A0A3A8;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.package-card a {
+    font-size: 14px;
+    color: #747474;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #747474;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 11px 30px;
+    margin-bottom: 39px;
 }
 
 /* main-download-app */
@@ -380,4 +563,49 @@ Style
 
 .download-app-item:not(:last-child) {
     margin-right: 30px;
+}
+
+/* main-footer */
+.main-footer {
+    background-color: #242422;
+    padding-top: 53px;
+    padding-bottom: 53px;
+}
+
+.awesome-link ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.awesome-link li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.awesome-link a {
+    color: #FFF;
+    font-size: 25px;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #A0A3A8;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/**************
+Media Queries
+***************/
+@media only screen and (max-width: 1024px){
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 580px) {
+    
 }
