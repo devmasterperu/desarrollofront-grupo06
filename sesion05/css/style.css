@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+
+    display: inline-block;
+    min-width: 289px;
+    height: 53px;
+
+    background-color: #EE5C48;
+    border-radius: 3px;
+    padding: 0 40px; /* primer valor: top y bottom | segundo valor: left y right*/
+    line-height: 53px; /* trick: mismo tamaño del alto */
+
+    position: relative;
+}
+
+.btn::before {
+    font-family: 'Linearicons';
+    content: "\e919";
+
+    position: absolute;
+    right: 20px;
+}
+
+.btn:hover {
+    background-color: #2C3D71;
+}
+
+

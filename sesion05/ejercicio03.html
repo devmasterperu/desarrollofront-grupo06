@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+    <style>
+        article {
+            width: 400px;
+            height: 400px;
+
+            background-color: tomato;
+            text-align: right;
+
+            position: relative;
+        }
+
+        header,
+        section,
+        div {
+            width: 140px;
+            height: 140px;
+            
+            position: absolute;
+        }
+
+        header {
+            background-color: green;
+            top: 60px;
+            left: 60px;
+
+            z-index: 3;
+        }
+
+        section {
+            background-color: violet;
+            top: 30px;
+            left: 30px;
+            
+            z-index: 1;
+        }
+
+        div {
+            background-color: yellow;
+
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header> 1 </header>
+        <section> 2 </section>
+        <div> 3 </div>
+    </article>
+</body>
+</html>
