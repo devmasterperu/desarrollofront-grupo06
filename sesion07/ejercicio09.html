@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio</title>
+    <style>
+        div  {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            background-color: coral;
+            margin: 0 auto 20px auto; /* centrado */
+        }
+
+        .transform1 {
+            /*  skewX(30deg) | skewY(50deg) */
+           transform: skew(20deg, 10deg);
+        }
+
+        .transform2 {
+            transform: scale(0.7);
+        }
+
+        .transform3 {
+            transform: rotate(30deg);
+            transform-origin: top right;
+        }
+
+        /*  translateX(30px) | translateY(50px) */
+        .transform4 {
+            transform: translate(50px, 30px);
+        }
+    </style>
+</head>
+<body>
+    <div class="transform1">Skew</div>
+    <div class="transform2">Scale</div>
+    <div class="transform3">Rotate</div>
+    <div class="transform4">Translate</div>
+</body>
+</html>
