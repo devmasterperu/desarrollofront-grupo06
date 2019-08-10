@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+    <style>
+        .loader {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+
+            border-top: 15px solid skyblue;
+            border-right: 15px solid white;
+            border-bottom: 15px solid white;
+            border-left: 15px solid white;
+
+            animation: loaderAnimate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        /* animacion */
+        @keyframes loaderAnimate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
