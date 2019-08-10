@@ -97,7 +97,7 @@ General
     --quaternary-color: #747474;
     --quinary-color: #4B4C50;
 
-    --primary-background: #F53C58;
+    --primary-background: linear-gradient(134deg, #FD702C 0%, #F4375C 100%);
 }
 
 *,
@@ -191,9 +191,25 @@ Style
     text-transform: uppercase;
 }
 
+/* menu-mobile */
+.menu-mobile {
+    display: none;
+    position: relative;
+    z-index: 4;
+}
+.icon-open {
+    display: inline-block;
+}
+.icon-open::before {
+    font-family: 'Linearicons';
+    content: "\e92b";
+    color: #FFF;
+    font-size: 42px;  
+}
+
 /* main-hero-banner */
 .main-hero-banner {
-    background-color: var(--primary-background);
+    background-image: var(--primary-background);
     padding-top: 115px;
 }
 
@@ -513,7 +529,7 @@ Style
 
 /* main-download-app */
 .main-download-app {
-    background-color: var(--primary-background);
+    background-image: var(--primary-background);
     padding-top: 94px;
     padding-bottom: 68px;
 }
@@ -599,11 +615,70 @@ Style
 Media Queries
 ***************/
 @media only screen and (max-width: 1024px){
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .main-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 1;
+        background-color: #000;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .description ul {
+        display: none;
+    }
+
+    .image-banner {
+        display: flex;
+        align-items: center;
+    }
 
 }
 
 @media only screen and (max-width: 768px) {
+    .hero-banner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .description p {
+        display: none;
+    }
+    .description > div {
+        max-width: initial;
+        text-align: center;
+    }
+    .description, .image-banner {
+        width: 100%;
+    }
+    .image-banner img {
+        max-width: 310px;
+        width: 100%;
+        margin: 0 auto;
+    }
 
+    .features-item {
+        width: 47.2457627119%;
+    }
 }
 
 @media only screen and (max-width: 580px) {
