@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            border: 2px solid grey;
+            border-radius: 12px;
+        }
+
+        .sombra1 {
+            box-shadow: 5px 5px; /*  horizontal vertical */
+            margin-bottom: 10px;
+        }
+
+        .sombra2 {
+            box-shadow: 5px 5px #999; /* color de sombra */
+            margin-bottom: 10px;
+        }
+
+        .sombra3 {
+            box-shadow: 5px 5px 2px #999; /* difuminado */
+            margin-bottom: 10px;
+        }
+
+        .sombra4 {
+            /* más de una sombra */
+            box-shadow: 4px 8px red,
+                         8px 12px green,
+                         12px 16px blue,
+                         16px 20px yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.sombra$*4 -->
+    <div class="sombra1"></div>
+    <div class="sombra2"></div>
+    <div class="sombra3"></div>
+    <div class="sombra4"></div>
+</body>
+</html>
