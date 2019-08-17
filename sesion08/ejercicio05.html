@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+</head>
+<body>
+    <script>
+        // estructuras repetitivas
+        var cursos = [
+            "Algoritmos y Fundamentos de Programación",
+            "Desarrollo Web Frontend",
+            "Desarrollo Web con Php",
+            "Base de Datos con SQL SERVER 2016"
+        ]
+
+        console.log(cursos.length); //tamaño del arreglo
+        var i;
+        for(i=0; i<cursos.length; i++) {
+            console.log(i); // indice
+            console.log(cursos[i]);
+        }    
+
+        var alumno = {
+            nombre: "Katherine",
+            apellido: "Bendezu",
+            edad: 24,
+            curso: "Desarrollo Web Frontend"
+        }
+
+        for (var i in alumno) {
+            console.log(alumno[i]);
+        }
+
+        var docente = [
+            "Gianfranco Manrique",
+            "Javier Diaz",
+            "Luis De la Cruz"
+        ]
+
+        var i = 0;
+        while(i < docente.length){
+            console.log("Docente: " + docente[i]);
+            i++;
+        }
+    </script>
+</body>
+</html>

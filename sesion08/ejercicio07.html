@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+</head>
+<body>
+    <h1 id="titulo"></h1>
+    <p>Centro de Entrenamiento en tecnología</p>
+
+    <!-- cdn jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        /* javascript VS jQuery */
+        
+        //javascript
+        // document.getElementById("titulo").innerHTML = "Dev Master"
+
+        // jquery
+        if(jQuery) { // verificando que jQuery existe
+            alert("Existe jQuery");
+            $("#titulo").html("Dev Master");
+        }else {
+            alert("No Existe jQuery");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+</head>
+<body>
+    <!-- 1era forma -->
+    <script>
+        /* tipos de datos: Primitivos */
+        // cadenas
+        var centroEstudio = "Dev Master";
+        var nombreDocente = 'Jesús Alexander Gonzales Manrique';
+
+        console.log(centroEstudio);
+        console.log(nombreDocente);
+
+        // números
+        var diasTrabajados = 5;
+        var porcentajeIgv = 0.18;
+        var edadDocente = 27;
+        var cantidadMaxAlumnos = 12;
+        var horasTrabajadas = 6;
+
+        console.log(diasTrabajados);
+        console.log(horasTrabajadas);
+
+        // booleanos (true/false) 
+        var valorVerdadero = true;
+        var valorFalso = false;
+
+        console.log(valorVerdadero);
+        console.log(valorFalso);
+
+        // null
+        var variableNull = null;
+        console.log(variableNull) // typeof object
+
+        // undefined
+        var variableUndefined; // Undefined es cuando no le asignas un valor a la variable
+        console.log(variableUndefined);
+
+        var variable1 = 1;
+        var variable2 = "2";
+        // ⚠️
+        var resultado1 = variable1 + variable2;
+        console.log(resultado1); // "12"
+
+        var resultado2 = variable1 + Number(variable2);
+        console.log(resultado2); // 3
+        console.log(typeof resultado2);
+
+        /* tipos de datos: compuestos */
+        // array - arreglo
+        var docentes = [
+            "Javier Diaz",
+            "Gianfranco Manrique",
+            "Hervey Quiñones",
+            "Luis De La Cruz",
+            "Jesús Gonzales"
+        ];
+        console.log(docentes);
+        console.log(docentes.length); // cantidad de elemento del arreglo 5
+
+        // accediendo a elementos
+        console.log(docentes[0]); // Primer elemento:  Javier Diaz
+        console.log(docentes[4]); // Ultimo elemento: Jesús Gonzales
+
+        // agregando elementos
+        docentes[5] = "Mathieu Gonzales";
+        docentes[6] = "Fernando Quiñones";
+
+        console.log(docentes);
+        console.log(docentes.length) // 7
+
+        // modificando elementos
+        docentes[5] = "Joao Gonzales";
+        console.log(docentes);
+
+        var alumnos = [
+            1,
+            "dev001",
+            "Katherine Bendezu",
+            [
+                "Desarrollo Web Frontend",
+                "Desarrollo Web con Php"
+            ]
+        ]
+
+        console.log(alumnos[3][0]); // "Desarrollo Web Frontend"
+        console.log(alumnos[3][1]); // "Desarrollo Web con Php"
+
+        var animales = [];
+
+        animales.push("perro");
+        animales.push("gato");
+        animales.push("canareo");
+        console.log(animales);
+
+        animales.unshift("conejo");
+        console.log(animales);
+
+        animales.pop();
+        console.log(animales);
+
+        animales.shift();
+        console.log(animales);
+
+        // busqueda de un elemento dentro del arreglo
+        var busquedaAnimal1 = animales.indexOf("gato");
+        console.log(busquedaAnimal1); // 1
+
+        var busquedaAnimal2 = animales.indexOf("paloma");
+        console.log(busquedaAnimal2); // -1
+        
+        var separadoArreglo1 = animales.join(); // ,
+        console.log(separadoArreglo1);
+        console.log(typeof separadoArreglo1); // string
+
+        var separadorArreglo2 = animales.join("-");
+        console.log(separadorArreglo2);
+        
+        // objetos - { propiedad: valor }
+        var mascota = {
+            nombre: "Tasabu",
+            raza: "Pitbull Stanford",
+            edad: 7,
+            color: "Blanco con manchas negras",
+            "propietario mascota": "Mathieu Gonzales"
+            // propietarioMascota: "Mathieu Gonzales"
+        };
+
+        console.log(mascota.nombre); // 1era forma
+        console.log(mascota["raza"]); // 2da forma
+
+        // agregando propiedad
+        mascota["domicilio"] = "Calle Juan Barreto 422";
+        console.log(mascota);
+
+        // combinacion de array y objecto
+        var docente = [
+            {
+                nombres: "Gianfranco",
+                apellidos: "Manrique Valentin",
+                cargo: "Docente",
+                curso: "SQL SERVER 2016"
+            },
+            {
+                nombres: "Luis",
+                apellidos: "De La Cruz",
+                cargo: "Docente",
+                curso: "Desarrollo Web con Php" 
+            },
+            {
+                nombres: "Jesús Alexander",
+                apellidos: "Gonzales Manrique",
+                cargo: "Docente",
+                curso: "Desarrollo Web Frontend"
+            }
+        ]
+        console.log(docente);
+        console.log(docente[2].curso); //"Desarrollo Web Frontend"
+
+        var alumno = {
+            nombre: "Katherine",
+            apellido: "Bendezu",
+            nombreCompleto: function(){
+                return this.nombre +" "+ this.apellido;
+            }
+        }
+        console.log(alumno.nombreCompleto()); // visualizamos la pripiedad nombreCompleto
+
+        alumno["edad"] = 24;
+        console.log(alumno);
+
+        delete alumno.nombreCompleto; // eliminando metodo nombreCompleto
+        console.log(alumno);
+
+
+    </script>
+</body>
+</html>

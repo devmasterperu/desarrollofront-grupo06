@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+            border: 4px dashed salmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seleccionando elementos con jQuery</h1>
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque omnis quis fugiat, eveniet voluptas provident harum sit. Nam recusandae ducimus optio quos sunt, est amet nemo ad cum ex iusto?Quidem dolore explicabo adipisci quia, deleniti obcaecati modi dolorum rerum eligendi facilis aperiam consequatur consectetur eum maxime totam porro nemo. Odit sunt maiores deserunt vel ab unde mollitia pariatur quam!</p>
+    <p class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, optio omnis quisquam sed ducimus perferendis eveniet possimus, reiciendis quia, earum cumque! Quisquam molestiae, autem voluptas quidem doloremque exercitationem recusandae quibusdam?Laudantium, rem obcaecati quos tempore sunt nesciunt cum incidunt eveniet expedita voluptas ut! Temporibus vel autem unde, impedit incidunt architecto nostrum molestias id dolor eaque nisi repellendus quasi facilis officia!</p>
+    <a href="https://www.google.com" class="link">Google</a>
+    <a href="file.pdf">Pdf</a>
+    <div></div>
+
+    <!-- cdn jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+    <script>
+        // seleccionando elemento con jQuery
+        $(document).ready(function(){
+            console.log($("h1")); // por elemento
+            console.log($("#texto")); // por id
+            console.log($(".texto2")); // por clase
+            console.log($("a.link")); // por elemento y clase
+            console.log($("a[href='file.pdf']")); // por atributo
+
+            $("div").css(
+                {
+                    width: "500px",
+                    height: "500px",
+                    "background-color": "violet",
+                    "border-radius": "50%"
+                }
+            )
+        });
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+</head>
+<body>
+    <h3>¿Que día de la semana es hoy?</h3>
+    <p>Hoy es: <span id="diaSemana" style="color: red"> </span></p>
+    <script>
+        // estructuras condicianales
+        // if - else
+        var edadUsuario = prompt("Ingrese una edad");
+        
+        if( edadUsuario < 18) {
+            console.log("Eres menor de edad");
+        }else {
+            console.log("Eres mayor de edad 💪🏽");
+        }
+
+        // switch
+        var elementoHtml = document.getElementById("diaSemana");
+        var dia = new Date().getDay();
+        console.log(dia);
+
+        switch(dia) {
+            case 1:
+                elementoHtml.innerHTML = "LUNES";
+                break;
+            case 2:
+                elementoHtml.innerHTML = "MARTES";
+                break;
+            case 3:
+                elementoHtml.innerHTML = "MIERCOLES";
+                break;
+            case 4:
+                elementoHtml.innerHTML = "JUEVES";
+                break;
+            case 5:
+                elementoHtml.innerHTML = "VIERNES";
+            break;
+            case 6:
+                elementoHtml.innerHTML = "SABADO";
+            break;
+            case 7:
+                elementoHtml.innerHTML = "DOMINGO";
+            break;
+        }
+    </script>
+</body>
+</html>

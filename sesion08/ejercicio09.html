@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+        }
+
+        .caja-grande {
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Evento click</h1>
+    <a href="" class="btn">Boton</a>
+
+    <h3>Agregando y Quitando Clase</h3>
+    <a href="" class="btn-agregar">Agregar Clase</a>
+    <a href="" class="btn-quitar">Quitar Clase</a>
+    <a href="" class="btn-interruptor">Agregar y Quitar Clase</a>
+
+    <div>
+
+    </div>
+    <!-- jquery -->
+    <script src="js/jQueryv3.4.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn").on("click",function(){
+                alert("Usted a presionado el boton");
+            })
+
+            $(".btn-agregar").on("click",function(e){
+                e.preventDefault();
+                $("div").addClass("caja-grande");
+            })
+
+            $(".btn-quitar").on("click",function(e){
+                e.preventDefault();
+                $("div").removeClass("caja-grande");
+            })
+
+            $(".btn-interruptor").on("click",function(e){
+                e.preventDefault();
+                $("div").toggleClass("caja-grande");
+            })
+
+        })
+    </script>
+</body>
+</html>
