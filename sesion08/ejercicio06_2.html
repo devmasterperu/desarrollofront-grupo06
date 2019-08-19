@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - ejercicio </title>
+</head>
+<body>
+    <script>
+    /* funciones:
+        Las funciones son uno de los pilares fundamentales en JavaScript. Ejecuta un conjunto de sentencias que realizan una tarea o calculan un valor.
+    */
+    // primera forma
+    var fnBasica = function() {
+        console.log("Primera forma de declarar una función");
+    }
+    fnBasica(); // llamada a la funcion fnBasica
+
+    // segunda forma
+    function fnBasica2(){
+        console.log("Segunda forma de declarar una función");
+    }
+    fnBasica2();  // llamada a la funcion fnBasica2
+
+    // retornando valor
+    function fnBasica3(){
+        console.log("Tercera forma de declarar una función. Retornando un valor");
+        return true;
+    }
+    fnBasica3(); // llamada a la funcion fnBasica3
+
+    // pasando argumentos ✅
+    function fnSuma(numero1, numero2) { // numero1 y numero2 son argumentos
+	    return numero1 + numero2;
+    };
+    console.log(fnSuma(20, 15));
+
+    // función
+    function fnSaludar(cantidad){
+        // estructura repetitiva
+        var i;
+        for (i= 1; i <= cantidad; i++) {
+            console.log("Saludo #" + i);
+        }
+    }
+    fnSaludar(5);
+    </script>
+</body>
+</html>

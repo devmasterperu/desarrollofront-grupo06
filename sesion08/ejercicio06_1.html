@@ -6,21 +6,38 @@
 </head>
 <body>
     <script>
-        // operadores de comparacion
+        // operadores aritmeticos
         var numero1 = 40;
         var numero2 = 20;
+
+        console.log(numero1 + numero2);
+        console.log(numero1 - numero2);
+        console.log(numero1 * numero2);
+        console.log(numero1 / numero2);
+        console.log(numero1  % numero2); // resto o residuo
+
+        // operadores de comparacion
         // = asignacion
         // == comparacion valor
         // === comparacion de valor y tipo
 
         console.log(numero1 > numero2); // devuelve true si el valor de la izquierda es mayor
         console.log(numero1 < numero2); // devuelve true si el valor de la derecha es mayor
-        console.log(numero1 >= numero2); // devuelve true si el valor de la derecha es mayor e igual
-        console.log(numero1 <= numero2); // devuelve true si el valor de la izquierda es menor e igual
+        console.log(numero1 >= numero2); // devuelve true si el valor de la izquierda es mayor e igual
+        console.log(numero1 <= numero2); // devuelve true si el valor de la derecha es mayor e igual
         console.log(numero1 == numero2); // devuelve true si ambos valores son iguales en valor
         console.log(numero1 === numero2); // devuelve true si ambos valores son iguales en valor y tipo
         console.log(numero1 != numero2);  // devuelve true si ambos son diferentes en valor
         console.log(numero1 !== numero2); // devuelve true si ambos son diferentes en valor y tipo
+
+        // ⚠️
+        var variable1 = 20;
+        var variable2 = "20";
+
+        console.log("** Comparando valor **");
+        console.log(variable1 == variable2); // OJO: La cadena de la derecha se convierte a Numero antes de realizar la comparación. true
+        console.log("** Comparando valor y tipo **");
+        console.log(variable1 === variable2); // false
 
         // operadores logicos    
         // && = AND y || = OR 
