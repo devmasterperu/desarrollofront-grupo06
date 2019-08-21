@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - FlexSlider</title>
+    <link rel="stylesheet" href="css/flexslider.css">
+    <style type="text/css">
+        .flex-caption {
+          width: 96%;
+          padding: 2%;
+          left: 0;
+          bottom: 0;
+          background: rgba(0,0,0,.5);
+          color: #fff;
+          text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+          font-size: 14px;
+          line-height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="images/kitchen_adventurer_caramel.jpg" />
+                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+            </li>
+            <li>
+                <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+            </li>
+            <li>
+                <img src="images/kitchen_adventurer_donut.jpg" />
+                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+            </li>
+            <li>
+                <img src="images/kitchen_adventurer_lemon.jpg" />
+                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+            </li>
+        </ul>
+    </div>
+    <!-- cdn jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!-- FlexSlider -->
+    <script src="js/jquery.flexslider.js"></script>
+    <script>
+        // Place in the <head>, after the three links
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: false, 
+            });
+        });
+    </script>
+</body>
+</html>
