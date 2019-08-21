@@ -1,0 +1,23 @@
+{
+  "name": "ejemplo01",
+  "version": "1.0.0",
+  "description": "Ejecutando GulpJS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "JS",
+    "GULPJS"
+  ],
+  "author": "gmanriqe",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-jsmin": "^0.1.5"
+  }
+}

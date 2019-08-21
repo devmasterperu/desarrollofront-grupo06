@@ -1,0 +1,20 @@
+/* primer comentario */
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* segundo comentario */
+h3 {
+    font-size: 45px;
+    color: red;
+    background-color: coral;
+    
+}
+
+/* tercer comentario */
+p {
+    font-size: 28px;
+    color: green;
+    background-color: skyblue;
+}
