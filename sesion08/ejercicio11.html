@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - Evento Submit</title>
+    <style>
+        .error {
+            border-color: red;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Login</legend>
+        <form id="form" action="" autocomplete="off">
+            <label for="usuario">Usuario: </label><br>
+            <input type="text" id="usuario"><br>
+            <label for="contrasenia">Contraseña: </label><br>
+            <input type="text" id="contrasenia"><br>
+            <button type="submit" id="btn">Ingresar</button>
+        </form>
+    </fieldset>
+    <!-- jquery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $( "#form" ).on("submit",function(e) {
+                // Evitamos la accion del submit por defecto
+                e.preventDefault();
+            });
+
+            $( "#btn" ).on("click",function(){
+                var usuario = $( "#usuario" );
+                var contrasenia = $( "#contrasenia" );
+                
+                var usuarioVal = usuario.val();
+                var contraseniaVal = contrasenia.val();
+
+                $( "input" ).removeClass("error");
+
+                if( usuarioVal === "" ) {
+                    alert("Falta llenar el campo usuario");
+                    usuario.focus();
+                    usuario.addClass("error");
+                } 
+                if (contraseniaVal === "") {
+                    alert("Falta llenar el campo contrasenia");
+                    contrasenia.focus();
+                    contrasenia.addClass("error");
+                }
+            })
+        })
+    </script>
+</body>
+</html>

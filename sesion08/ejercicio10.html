@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos en jQuery - Evento Mouseenter y Mouseleave</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+
+            color: coral;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Evento mouseenter y Evento mouseleave</h1>
+    <div>
+        Pase el mouse
+    </div>
+    <!-- jquery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(onReady);
+
+        function onReady(){
+            // ** mouseenter
+            $("div").on("mouseenter",function(){
+                $(this).html("<h3>Ahora.. Quite el mouse</h3>");
+            });
+
+             // ** mouseleave
+            $("div").on("mouseleave",function(){
+                $(this).html("<h3> Pase el mouse!</h3>");
+            });
+        };
+    </script>
+</body>
+</html>
